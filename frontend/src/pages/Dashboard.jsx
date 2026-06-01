@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import SubjectCard from "../components/SubjectCard";
+import MetricCard from "../components/MetricCard";
 
 export default function Dashboard() {
 
@@ -29,9 +30,30 @@ export default function Dashboard() {
 
       <Navbar />
 
-      <div className="p-4">
+      <div className="max-w-6xl mx-auto p-4">
 
         <h2 className="text-lg font-bold mb-4">
+        <div className="grid grid-cols-3 gap-3 mb-6">
+
+  <MetricCard
+    value="6"
+    label="Active Subjects"
+    color="#111827"
+  />
+
+  <MetricCard
+    value="14"
+    label="Best Streak"
+    color="#f59e0b"
+  />
+
+  <MetricCard
+    value="4/6"
+    label="Done Today"
+    color="#10b981"
+  />
+
+</div>
           Today's Subjects
         </h2>
 
